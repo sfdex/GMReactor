@@ -1,0 +1,4 @@
+com.sfdex.gmr.lspmodule.ModelModule
+com.sfdex.gmr.lspmodule.HarmonyOSModule
+com.sfdex.gmr.lspmodule.HyperOSModule
+com.sfdex.gmr.lspmodule.NativeModule

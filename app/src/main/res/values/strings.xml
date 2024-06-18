@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GM Reactor</string>
+    <string name="description">Genetically Modified Reactor</string>
+    <string name="loading">Loading…</string>
+    <string name="trigger_off">Trigger off</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
+</resources>
