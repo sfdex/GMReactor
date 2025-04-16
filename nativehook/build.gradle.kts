@@ -5,17 +5,22 @@ plugins {
 
 android {
     namespace = "com.sfdex.lib"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-        externalNativeBuild {
+        /*externalNativeBuild {
+            // For ndk-build, instead use the ndkBuild block.
             cmake {
-                cppFlags("")
+                // Passes optional arguments to CMake.
+                arguments += listOf("-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=OFF")
             }
+        }*/
+        ndk {
+            abiFilters += arrayOf("arm64-v8a","armeabi-v7a")
         }
     }
 
@@ -35,11 +40,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
     buildFeatures {
         prefab = true

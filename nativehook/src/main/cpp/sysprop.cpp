@@ -1,6 +1,7 @@
 #include "log.h"
 #include "fstream"
 #include "sstream"
+#include "vector"
 #include "bytehook.h"
 #include "sys/system_properties.h"
 #include "sysprop.h"
